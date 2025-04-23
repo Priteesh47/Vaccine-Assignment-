@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: Outfit;
+}
+
+.active hr {
+	@apply block;
+}
+
+::-webkit-scrollbar {
+	@apply hidden;
+}
+
+/* Toast Styles */
+.Toastify__toast {
+	@apply rounded-lg shadow-lg;
+}
+
+.Toastify__toast--success {
+	@apply bg-green-500 text-white;
+}
+
+.Toastify__toast--error {
+	@apply bg-red-500 text-white;
+}
+
+.Toastify__toast--warning {
+	@apply bg-yellow-500 text-white;
+}
+
+.Toastify__toast--info {
+	@apply bg-blue-500 text-white;
+}
+
+.Toastify__progress-bar {
+	@apply bg-white bg-opacity-30;
+}
+
+.Toastify__close-button {
+	@apply text-white opacity-75 hover:opacity-100;
+}
+
+.input-style {
+	@apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.input {
+	@apply w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#0c0e1c]/50;
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+	transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #888 #f1f1f1;
+}
